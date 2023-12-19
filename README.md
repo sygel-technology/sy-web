@@ -7,6 +7,6 @@ Available addons
 ----------------
 addon | version | summary
 --- | --- | ---
-[](/) | 15.0.1.0.0 | 
+[web_company_logo](/web_company_logo) | 15.0.1.0.0 | Show company logo in nav bar
 
 [//]: # (end addons)
