@@ -4,7 +4,7 @@
 {
     "name": "Web Company Logo",
     "summary": "Web Company Logo",
-    "version": "15.0.1.0.0",
+    "version": "14.0.1.0.0",
     "category": "web",
     "website": "https://www.kareemabuzaid.com, https://www.sygel.es",
     "author": "Kareem Abuzaid, kareem.abuzaid123@gmail.com, Sygel",
@@ -15,13 +15,10 @@
         'base',
         'web',
     ],
-    "assets": {
-        "web.assets_backend": [
-            "web_company_logo/static/src/css/menu.css",
-            "web_company_logo/static/src/js/menu.js",
-        ],
-        "web.assets_qweb": [
-            "web_company_logo/static/src/xml/menu.xml",
-        ],
-    },
+    "data": [
+        "templates/assets.xml"
+    ],
+    "qweb": [
+        "static/src/xml/menu.xml"
+    ]
 }

@@ -1,13 +1,16 @@
 odoo.define('web_company_logo.web_company_logo', function (require) {
     "use strict";
 
-    const { registry } = require('@web/core/registry');
-    const { Component} = owl;
-
     var session = require('web.session');
+    var Menu = require('web.SystrayMenu');
 
-    class WebCompanyLogo extends Component{
-        setup(){
+    Menu.include({
+        /**
+         * @override
+         */
+        start: function (parent, options) {
+            this._super.apply(this, arguments);
+
             var url = window.location.origin;
             var companyId = session.company_id;
             $.ajax({
@@ -28,7 +31,6 @@ odoo.define('web_company_logo.web_company_logo', function (require) {
                 },
             });
         }
-    }
-    WebCompanyLogo.template = 'web_company_logo.WebCompanyLogo';
-    registry.category("systray").add("web_company_logo", { Component: WebCompanyLogo, }, { sequence: 1000})
+    })
+    return Menu;
 });
