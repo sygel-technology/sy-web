@@ -6,14 +6,14 @@
     "summary": "Web Company Logo",
     "version": "16.0.1.0.0",
     "category": "web",
-    "website": "https://www.kareemabuzaid.com, https://www.sygel.es",
+    "website": "https://github.com/sygel-technology/sy-web",
     "author": "Kareem Abuzaid, kareem.abuzaid123@gmail.com, Sygel",
     "license": "AGPL-3",
     "application": False,
     "installable": True,
-    'depends': [
-        'base',
-        'web',
+    "depends": [
+        "base",
+        "web",
     ],
     "assets": {
         "web.assets_backend": [
