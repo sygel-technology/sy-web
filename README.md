@@ -5,9 +5,9 @@ Odoo web client UI related addons
 
 Available addons
 ----------------
-addon | version | summary
---- | --- | ---
-[remaining_days_widget_reformat_state](remaining_days_widget_reformat_state/) | 14.0.1.0.0 | Reformat text shown with remaining_days widget
-[web_company_logo](web_company_logo/) | 14.0.1.0.0 | Show company logo in nav bar
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[remaining_days_widget_reformat_state](remaining_days_widget_reformat_state/) | 14.0.1.0.0 |  | Reformat text shown with remaining_days widget
+[web_company_logo](web_company_logo/) | 14.0.1.0.0 |  | Web Company Logo
 
 [//]: # (end addons)
