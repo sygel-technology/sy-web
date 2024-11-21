@@ -16,7 +16,7 @@ odoo.define("web_company_logo.web_company_logo", function (require) {
                 url: `${url}/check_company_logo`,
                 success: function (result) {
                     var result = JSON.parse(result);
-                    if (result.has_logo == true) {
+                    if (result.has_logo === true) {
                         $(
                             "#company-logo"
                         )[0].src = `${url}/web/image?model=res.company&id=${companyId}&field=logo`;
@@ -24,7 +24,7 @@ odoo.define("web_company_logo.web_company_logo", function (require) {
                         $("#company-logo-link")[0].remove();
                     }
                 },
-                error: function (xhr, ajaxOptions, thrownError) {
+                error: function () {
                     console.log("Error encountered");
                 },
             });
