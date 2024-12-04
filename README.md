@@ -21,7 +21,8 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[web_company_logo](web_company_logo/) | 16.0.1.0.0 |  | Web Company Logo
+[footer_extra_info_base](footer_extra_info_base/) | 16.0.1.0.0 |  | Base module to include extra info in PDF footer
+[web_company_logo](web_company_logo/) | 16.0.1.0.0 |  | Show the company logo on top navigation bar
 
 [//]: # (end addons)
 
