@@ -13,9 +13,10 @@ class WebCompanyLogoController(http.Controller):
         website=True,
         sitemap=False,
     )
-    def check_company_logo(self, company_id=0):
-        has_logo = bool(request.env["res.company"].browse(int(company_id)).logo)
-
+    def check_company_logo(self, company_id=False):
+        has_logo = False
+        if company_id:
+            has_logo = bool(request.env["res.company"].browse(int(company_id)).logo)
         return json.dumps(
             {
                 "has_logo": has_logo,
