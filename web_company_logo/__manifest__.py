@@ -4,7 +4,7 @@
 {
     "name": "Web Company Logo",
     "summary": "Show the company logo on top navigation bar",
-    "version": "17.0.1.0.0",
+    "version": "17.0.1.1.0",
     "category": "web",
     "website": "https://github.com/sygel-technology/sy-web",
     "author": "Kareem Abuzaid, kareem.abuzaid123@gmail.com, "
