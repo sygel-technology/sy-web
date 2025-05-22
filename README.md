@@ -16,6 +16,13 @@ Odoo web client UI related addons
 <!-- prettier-ignore-start -->
 
 [//]: # (addons)
+
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[web_company_logo](web_company_logo/) | 17.0.1.1.0 |  | Show the company logo on top navigation bar
+
 [//]: # (end addons)
 
 <!-- prettier-ignore-end -->
