@@ -14,9 +14,8 @@ export class WebCompanyLogo extends Component {
             success: function (result) {
                 var result2 = JSON.parse(result);
                 if (result2.has_logo === true) {
-                    $(
-                        "#company-logo"
-                    )[0].src = `${url}/web/image?model=res.company&id=${companyId}&field=logo`;
+                    $("#company-logo")[0].src =
+                        `${url}/web/image?model=res.company&id=${companyId}&field=logo`;
                 } else {
                     $("#company-logo-link")[0].remove();
                 }
