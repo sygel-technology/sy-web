@@ -1,28 +1,26 @@
-/** @odoo-module **/
-
-import {Component} from "@odoo/owl";
+import {Component, onWillStart, useState} from "@odoo/owl";
 import {registry} from "@web/core/registry";
+import {useService} from "@web/core/utils/hooks";
 
 export class WebCompanyLogo extends Component {
+    static template = "WebCompanyLogo";
+    static props = {};
     setup() {
-        var url = window.location.origin;
-        var companyId = this.env.services.company.currentCompany.id;
-        $.ajax({
-            type: "GET",
-            data: {company_id: companyId},
-            url: `${url}/check_company_logo`,
-            success: function (result) {
-                var result2 = JSON.parse(result);
-                if (result2.has_logo === true) {
-                    $("#company-logo")[0].src =
-                        `${url}/web/image?model=res.company&id=${companyId}&field=logo`;
-                } else {
-                    $("#company-logo-link")[0].remove();
-                }
-            },
-            error: function () {
-                console.log("Error encountered");
-            },
+        this.company = useService("company");
+        this.state = useState({hasLogo: false, logoUrl: ""});
+
+        onWillStart(async () => {
+            const companyId = this.company.activeCompanyIds[0];
+            const url = window.location.origin;
+            const response = await fetch(
+                `${url}/check_company_logo?company_id=${companyId}`,
+                {method: "GET"}
+            );
+            const result = await response.json();
+            if (result.has_logo) {
+                this.state.hasLogo = true;
+                this.state.logoUrl = `${url}/web/image?model=res.company&id=${companyId}&field=logo`;
+            }
         });
     }
 }

@@ -4,11 +4,10 @@
 {
     "name": "Web Company Logo",
     "summary": "Show the company logo on top navigation bar",
-    "version": "17.0.1.1.0",
+    "version": "18.0.1.0.0",
     "category": "web",
     "website": "https://github.com/sygel-technology/sy-web",
-    "author": "Kareem Abuzaid, kareem.abuzaid123@gmail.com, "
-    "Sygel, "
+    "author": "Sygel, Kareem Abuzaid, kareem.abuzaid123@gmail.com"
     "Odoo Community Association (OCA)",
     "license": "AGPL-3",
     "application": False,
