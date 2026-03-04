@@ -1,0 +1,11 @@
+[project]
+name = "odoo-addons-sygel-technology-sy-web"
+version = "18.0.20260304.0"
+dependencies = [
+    "odoo-addon-web_company_logo==18.0.*",
+]
+classifiers=[
+    "Programming Language :: Python",
+    "Framework :: Odoo",
+    "Framework :: Odoo :: 18.0",
+]
