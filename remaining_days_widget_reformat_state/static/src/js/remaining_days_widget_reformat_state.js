@@ -9,11 +9,13 @@ odoo.define("remaining_days_widget_reformat_state", function (require) {
     basic_fields.RemainingDays.include({
         _render: function () {
             this._super.apply(this, arguments);
-            if (this.nodeOptions.reformat && (
-                !this.nodeOptions.reformat_states || this.nodeOptions.reformat_states.includes(this.recordData.state)
-            )) {
+            if (
+                this.nodeOptions.reformat &&
+                (!this.nodeOptions.reformat_states ||
+                    this.nodeOptions.reformat_states.includes(this.recordData.state))
+            ) {
                 this.$el.removeClass();
             }
         },
     });
-})
+});
