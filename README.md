@@ -21,6 +21,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[sy_web_widget_remaining_days_reformat_state](sy_web_widget_remaining_days_reformat_state/) | 17.0.1.0.0 |  | Reformat text shown with remaining_days widget
 [web_company_logo](web_company_logo/) | 17.0.1.1.0 |  | Show the company logo on top navigation bar
 
 [//]: # (end addons)
